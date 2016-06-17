@@ -39,7 +39,7 @@ void
 GEOM_FaceSource:: 
 AddFace(const TopoDS_Face& theFace) 
 { 
-  myFaceSet.Add(theFace); 
+  myFaceSet.Append(theFace); 
 } 
  
 void 

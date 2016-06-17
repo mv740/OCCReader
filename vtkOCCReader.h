@@ -24,7 +24,7 @@
 
 #include "OCC2VTK.h"
 #include "vtkPolyDataAlgorithm.h"
-#include <vtksys/stl/vector>
+#include <vector>
 //#include <GEOM_Gen.hh>
 
 #include "GEOM_VertexSource.h"
@@ -73,6 +73,9 @@ protected:
 
   vtkOCCReader( const vtkOCCReader& ); // Not implemented.
   void operator = ( const vtkOCCReader& ); // Not implemented.
+
+private :
+	void toLowerCase(char c[]);
 };
 
 #endif // __vtkOCCReader_h

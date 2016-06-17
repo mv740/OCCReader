@@ -51,7 +51,7 @@ GEOM_EdgeSource::~GEOM_EdgeSource()
 void GEOM_EdgeSource::AddEdge (const TopoDS_Edge& theEdge,
                                bool theIsVector)
 {
-  myEdgeSet.Add(theEdge);
+  myEdgeSet.Append(theEdge);
   myIsVector = theIsVector;
 }
 

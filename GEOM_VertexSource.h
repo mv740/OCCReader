@@ -25,9 +25,9 @@
  
 #include <config.h>
 #include <TopoDS_Vertex.hxx>
-#include <NCollection_Set.hxx> 
+#include <NCollection_Sequence.hxx> 
  
-typedef NCollection_Set<TopoDS_Vertex> TVertexSet; 
+typedef NCollection_Sequence <TopoDS_Vertex> TVertexSet;
  
 #include <vtkPoints.h> 
 #include <vtkPolyDataAlgorithm.h> 

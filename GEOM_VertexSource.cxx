@@ -45,7 +45,7 @@ void
 GEOM_VertexSource:: 
 AddVertex(const TopoDS_Vertex& theVertex) 
 { 
-  myVertexSet.Add(theVertex); 
+  myVertexSet.Append(theVertex); 
 } 
  
 int GEOM_VertexSource::RequestData(vtkInformation *vtkNotUsed(request),

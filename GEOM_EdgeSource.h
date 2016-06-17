@@ -25,9 +25,9 @@
 
 #include <config.h>
 #include <TopoDS_Edge.hxx> 
-#include <NCollection_Set.hxx> 
+#include <NCollection_Sequence.hxx> 
  
-typedef NCollection_Set<TopoDS_Edge> TEdgeSet; 
+typedef NCollection_Sequence<TopoDS_Edge> TEdgeSet;
  
 #include <vtkPoints.h> 
 #include <vtkPolyDataAlgorithm.h> 

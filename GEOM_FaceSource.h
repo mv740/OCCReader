@@ -26,9 +26,9 @@
 #include <config.h>
 #include <gp_Pnt.hxx>
 #include <TopoDS_Face.hxx> 
-#include <NCollection_Set.hxx> 
+#include <NCollection_Sequence.hxx> 
  
-typedef NCollection_Set<TopoDS_Face> TFaceSet; 
+typedef NCollection_Sequence<TopoDS_Face> TFaceSet;
  
 #include <vtkPoints.h> 
 #include <vtkPolyDataAlgorithm.h> 

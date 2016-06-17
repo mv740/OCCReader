@@ -60,7 +60,7 @@
        </Documentation>
      </DoubleVectorProperty>
      <Hints>
-        <ReaderFactory extensions="step stp iges igs brep"
+        <ReaderFactory extensions="step STEP stp STP iges IGES igs IGS brep BREP"
                        file_description="OpenCASCADE CAD Files" />
      </Hints>
       <!-- End OCC2VTKCorbaSource -->
