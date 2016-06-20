@@ -5,7 +5,8 @@ A plugin for visualizing CAD file in STEP,IGES and BREP format in  ParaView.
 
 
 ********************************************************************************
-******************** Compile in Linux system **********************************
+## Compile in Linux system
+********************************************************************************
 
 This compilation process was tested in Ubutun 14.04 system. Remember to change
 all the abbreviation (for example $PVBUILD)to the actual folder name.
@@ -90,8 +91,8 @@ select "Auto Load" to load it automatically.
 
 
 ********************************************************************************
-********************  Compile in Windows system ********************************
-
+## Compile in Windows system 
+********************************************************************************
 
 The tested system is Windows 10. You need cmake for generating the project, and
 Visual Studio for compilation. The current tested version is Visual studio 2013 and Visual studio 2015.
@@ -102,21 +103,21 @@ abbreviation to the actual folder name.
 
 #### Step 1. Download ParaView source and depended dependencies on the plugin. 
     
-* Download the ParaView source package from www.paraview.org/download. Upzip it
+1. Download the ParaView source package from www.paraview.org/download. Upzip it
 into a folder (Here brief as $PVSRC). You need tools like 7zip to unzip the
 package.
 
-* Download the SALOME-platfrom. Because this plugin compilation depends on many
+2. Download the SALOME-platfrom. Because this plugin compilation depends on many
 open-source toolkit, for example OCC, QT, VTK, meanwhile these toolkits also
 depend on other libraries, a efficient solution is installing SALOME-platform
 which includes all these libraries and toolkits.
 
     * In http://www.salome-platform.org/downloads/current-version, download the
     Windows SDK version of SALOME. The tested version is SALOME 7.7.1 32bit.
-    
-    * **if you already have paraview installed, and all the environmental variable configured you can skip to Step 2.1**
-    
+ 
     * Extract it in a folder, here brief as $SALOME. 
+ 
+    * **if you already have a paraview environment configured (built from source) you can skip to Step 2.2**
     
     * Copy the "compile.bat" under $SALOME\WORK and rename it as
     "compile_env.bat", we are going to use the environment setting in this file
@@ -129,14 +130,14 @@ which includes all these libraries and toolkits.
 
 #### Step 2. Compile  ParaView with the plugin
 
-* Open a windows dos terminal, change to the $SALOME\WORK folder
+1. Open a windows dos terminal, change to the $SALOME\WORK folder
       cd  $SALOME\WORK 
       then execute the "compile_env.bat"
     
-* In the same terminal, change folder to $CMAKE
+2. In the same terminal, change folder to $CMAKE
       cd $CMAKE
     
-* Open the "cmake-gui.exe". 
+3. Open the "cmake-gui.exe". 
     
     *  Specify the folder containing the ParaView Source  $PVSRC
     
@@ -153,7 +154,7 @@ which includes all these libraries and toolkits.
     * If no problem in configuration, then click "Generate" to generated the
     project files.
 
-* Go to $PVBUILD, you will find a "ALL_BUILD.vcxproj". Open it with Visual
+4. Go to $PVBUILD, you will find a "ALL_BUILD.vcxproj". Open it with Visual
 Studio, and build. You can find the compiled ParaView under the
 $PVBUILD\bin\Debug(Release).
 
@@ -209,8 +210,8 @@ manually for the first time. In ParaView menu Tools->Manage Plugins, click "Load
 New" to load the "OCCReader.dll" in the some folder as paraview.exe , and select
 "Auto Load" to load it automatically.
 
-	
-********************  How to use this plugin ***********************************
+********************************************************************************	
+## How to use this plugin 
 ********************************************************************************
 
 This plugin is used like other ParaView Reader plugin. In ParaView, click "Open" 
